@@ -1,0 +1,9 @@
+version: '3'
+services:
+  uwu-api:
+    build: .
+    ports:
+      - "33214:3000"
+    volumes:
+      - .:/usr/src/app
+    command: npm start

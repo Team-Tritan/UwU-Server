@@ -51,6 +51,23 @@ function selectRandomElement(arr) {
   return arr[randomIndex];
 }
 
+const femboyImages = [
+  "https://safebooru.org/samples/2842/sample_39f59364b4284282015068a29b3700ff3b25fb96.jpg?2960934",
+  "https://i.redd.it/byiyqu2usfi61.jpg",
+  "https://i.pinimg.com/originals/77/99/83/7799833a724f1a32abcb9c7b4011d430.png",
+  "https://assets.change.org/photos/3/mx/fk/ZgmXFKfFkXbQiJf-1600x900-noPad.jpg?1620340865",
+  "https://images.alphacoders.com/858/858864.jpg",
+  "https://img-lb.fireden.net/cm/image/1597/89/1597899491068.jpg",
+  "https://img.goodfon.com/original/2560x1600/f/bb/astolfo-sudba-apokrif-fate-apocrypha-paren.jpg",
+  "https://i.imgur.com/cDIyDrA.jpg",
+  "https://safebooru.org/images/2838/d9e3b80f817ae7f37cc8afb73a032543f3df7dfb.jpg?2956725",
+  "https://i.redd.it/hxmz4je6s6721.jpg",
+];
+
+function getRandomFemboyImage() {
+  return selectRandomElement(femboyImages);
+}
+
 function uwuify(message) {
   message = message.toLowerCase();
   // words
@@ -70,4 +87,7 @@ function uwuify(message) {
   return message;
 }
 
-module.exports = uwuify;
+module.exports = {
+  uwuify,
+  getRandomFemboyImage,
+};

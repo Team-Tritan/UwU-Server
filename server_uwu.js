@@ -28,7 +28,7 @@ app.get("/uwu", (req, res) => {
     const uwuifiedMessage = uwuify(message);
     const imageUrl = getRandomFemboyImage();
 
-    res.send(`
+    return res.send(`
       <!DOCTYPE html>
       <html>
       <head>

@@ -1,9 +1,9 @@
-version: '3'
+version: '3.8'
 services:
-  uwu-api:
-    build: .
+  uwuifier:
+    build:
+      context: .
+    container_name: uwu-api
     ports:
-      - "33214:3000"
-    volumes:
-      - .:/usr/src/app
-    command: npm start
+      - '33214:3000'
+    restart: unless-stopped

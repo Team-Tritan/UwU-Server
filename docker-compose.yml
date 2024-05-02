@@ -5,5 +5,5 @@ services:
       context: .
     container_name: uwu-api
     ports:
-      - '33214:3000'
+      - '33214:3001'
     restart: unless-stopped

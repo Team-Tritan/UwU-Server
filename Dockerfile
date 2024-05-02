@@ -2,12 +2,12 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY package.json bun.lockb ./
 
-RUN npm install
+RUN bun i
 
 COPY . .
 
-EXPOSE 3000
+EXPOSE 3001
 
-CMD [ "node", "server_uwu.js" ]
+CMD [ "bun", "start" ]

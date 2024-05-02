@@ -1,6 +1,8 @@
-FROM node:18-alpine
+FROM node:20-alpine
 
 WORKDIR /app
+
+RUN npm i -g bun
 
 COPY package.json bun.lockb ./
 

@@ -17,7 +17,7 @@ Here's an example of how to use the `/uwu` endpoint:
 GET /uwu?message=Hello, world!
 ```
 
-The server will respond with a JSON object that contains your UwUified message.
+The server will respond with your UwUified message as text.
 
 ## Running the server
 

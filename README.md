@@ -41,7 +41,7 @@ This project depends on the `hono` package. You can install it by running `bun i
 
 You can bundle this project into a single JavaScript file by running `bun bundle`. This will create a `bundle.js` with the bundled code.
 
-You can then deploy this on the edge like Cloudflare Workers.
+You can then deploy this to the edge with services like Cloudflare Workers.
 
 ## License
 

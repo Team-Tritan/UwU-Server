@@ -22,6 +22,7 @@ The server will respond with a JSON object that contains your UwUified message.
 ## Running the server
 
 To run the server, you need to have Bun installed (`npm i -g bun`) on your machine.
+
 Once you have Bun installed, you can start the server by running the following command in your terminal:
 
 ```sh
@@ -29,6 +30,7 @@ bun start
 ```
 
 The server will start running on port 3000.
+
 You can then access the API by making requests to `http://localhost:3000`.
 
 ## Dependencies

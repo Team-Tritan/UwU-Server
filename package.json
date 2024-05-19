@@ -4,7 +4,8 @@
   },
   "scripts": {
     "start": "bun src/server_uwu.ts",
-    "dev": "bun src/server_uwu.ts --hot"
+    "dev": "bun src/server_uwu.ts --hot",
+    "bundle": "bun build src/server_uwu.ts --bundle --outfile=bundle.js"
   },
   "name": "uwu-server",
   "module": "index.ts",

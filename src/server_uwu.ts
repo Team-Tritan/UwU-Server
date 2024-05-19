@@ -1,6 +1,5 @@
 import { Hono } from "hono";
 import { uwuify } from "./uwu";
-import { serve } from "bun";
 
 const app = new Hono();
 
@@ -16,7 +15,4 @@ app.get("/uwu", (c) => {
   return c.text(uwuify(message));
 });
 
-serve({
-  fetch: app.fetch,
-  port: 3001,
-});
+export default app;

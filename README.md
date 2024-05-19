@@ -37,6 +37,12 @@ You can then access the API by making requests to `http://localhost:3000`.
 
 This project depends on the `hono` package. You can install it by running `bun i` in your terminal.
 
+## Bundling
+
+You can bundle this project into a single JavaScript file by running `bun bundle`. This will create a `bundle.js` with the bundled code.
+
+You can then deploy this on the edge like Cloudflare Workers.
+
 ## License
 
 This project is licensed under the Apache License, Version 2.0. You can read the full license in the [LICENSE](LICENSE) file.
